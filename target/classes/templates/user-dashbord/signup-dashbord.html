@@ -1,0 +1,133 @@
+     <!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleafe.org">
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/Style.css}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    		
+    <title th:text="${title}"></title>
+  </head>
+ <body>
+  <!-- Nav Var -->
+  <nav class=" fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
+  	<div class="container-fluid text-light">
+    	<div class="">
+ 			<a href="" class="href"><img class="logonav" th:src="@{/image/logo.png}" alt="logo" /></a>
+ 		</div>
+    	
+    		<div class="navbar ml-auto text-uppercase" id="navbarSupportedContent">
+      		    <ul class="navbar-nav ml-auto">
+      		    		
+       					<li class="nav-item">
+          					<a class="nav-link active" aria-current="page" th:href="@{/}">Home</a>
+        				</li>
+        				
+        				<li class="nav-item">
+          					<a class="nav-link active" href="#">About</a>
+        				</li>
+        				
+        				<li class="nav-item">
+          					<a class="nav-link active" th:href="@{/user/user-dashbord}" tabindex="-1" >Login</a>
+        			   </li>
+        			   
+        			   <li class="nav-item">
+          					<a class="nav-link active" th:href="@{/}" tabindex="-1" >Signup</a>
+        			   </li>
+      		   </ul>
+   		 </div>
+ 	 </div>
+	</nav>
+<!-- Body  Page --> 
+   	<div class="content1">
+  		 <div class="d-flex justify-content-center p-2">
+		    <div class="p-5 rounded border border-primary" style="background-color: #ffffff;">
+		    	<form name="formSubmit" id="formSubmit" th:action="@{/submit-form}" method="post">
+		    			<div class="welcomename">
+		    			<h4>Welcome to social media platform.</h4>
+		    			</div>
+		    			<div id="responseTextId" class="text-center">
+		    			
+		    			</div>
+		    			<div class="col-md-12 mb-3">
+					     <div class="input-group">
+					     <div class="input-group-prepend">
+					        <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-user"></i></span>
+					      </div>
+					        <input type="text" class="form-control is-valid"  placeholder="User Name" name="name" id="name" aria-describedby="inputGroupPrepend3" required>
+					      <div class="valid-feedback">
+					           
+					       </div>
+					      </div>
+					   </div>
+					    
+					  <div class="col-md-12 mb-3">
+					     <div class="input-group">
+					     <div class="input-group-prepend">
+					        <span class="input-group-text" id="inputGroupPrepend3"><i class="far fa-envelope"></i></i></span>
+					      </div>
+					        <input type="text" class="form-control is-valid" id="username" placeholder="User Email" name="username" onblur="checkEmail(this)"aria-describedby="inputGroupPrepend3" required>
+					      </div>
+					      <div> <small id="helpUsername" class="form-text text-muted"></small></div>
+					   </div>
+					   
+					   <div class="col-md-12 mb-3">
+					     <div class="input-group">
+					     <div class="input-group-prepend">
+					        <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-unlock-alt"></i></span>
+					      </div>
+					        <input type="text" class="form-control is-valid" id="password" placeholder="User Password" name="password" aria-describedby="inputGroupPrepend3" required>
+					      <div class="valid-feedback">
+					           
+					       </div>
+					      </div>
+					   </div>
+					   <div class="col-md-12 mb-3">
+					     <div >
+					      <label for="validationCustom03">User Gender</label>
+					        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="gender" name="gender"  value="Male">
+					        Male
+					        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" id="gender" name="gender" value="Female">
+					        Female
+					      </div>
+					   </div>
+					   
+					   <div class="col-md-12 mb-3">
+					     <div class="input-group">
+					     <div class="input-group-prepend">
+					        <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-phone-alt"></i></span>
+					      </div>
+					        <input type="number" class="form-control is-valid" id="phone" placeholder="User Phone" name="phone" aria-describedby="inputGroupPrepend3" required>
+					      <div class="valid-feedback">
+					           
+					       </div>
+					      </div>
+					   </div>
+					   
+					   <div class="col-md-12 mb-3">
+					   		<label for="validationCustom03">City</label>
+					     <div class="input-group">
+					         <select class="input-group" name="city" id="city" >
+					         <option selected disabled>--Select City--</option>
+					         <option value="Agra">Agra</option>
+					         </select>
+					      <div class="valid-feedback">
+					           
+					       </div>
+					      </div>
+					   </div>
+					   <div class="text-center" id="loderButton">
+					   <button type="reset"  class="btn btn-warning">Reset</button>
+					   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					   <button type="submit"  class="btn btn-primary">Submit</button>
+					   </div>
+		    	</form>
+		    </div>
+		</div>
+		</div>
+	  <script th:src="@{/javascript/jquery-3.5.1.min.js}"> </script>
+    <script th:src="@{/javascript/myscript.js}"> </script>
+  </body>
+</html>
