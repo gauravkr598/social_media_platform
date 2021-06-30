@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat May 01 15:20:07 IST 2021
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1619862607121
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact com.fasterxml.jackson.datatype\:jackson-datatype-jsr310\:jar\:sources\:2.11.4 from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org
