@@ -1,0 +1,167 @@
+  
+ .bg-primary{
+ 	background: #2E86C1!important;
+ }
+ .banner{
+ 	width: 100%;
+ 	height: 90vh;
+ 	
+ 	background-size: cover;
+ 	color: white;
+ }
+ .my-card{
+ 	background-color: #808000;
+ 	padding: auto;
+ 	margin: auto;
+ 	color:white;
+ }
+ #login .container #login-row #login-column #login-box {
+  margin-top: 80px;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: auto;
+}
+
+/*  side var */
+ @Media only screen and(max-width:300px){  
+	.sidebar{
+		display:none;	
+		width:80%!important;
+		position: fixed;
+		background:#BDC3C7;
+		padding-top:20px;
+		margin-top:72px;	
+     }
+	     .content{
+		 margin-left: 0!important;
+        }
+  }  
+.sidebar{
+	width:18%;	
+	height: 100%;
+	position: fixed;
+	background:#BDC3C7;
+	padding-top: 45px;
+	margin-top:72px;	
+}
+.sidebar a{
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: black;
+	
+}
+/* .sidebar a:hover{ */
+/* 	background: #8080ff; */
+/* } */
+.content{
+	margin-left: 18%;
+	height:100%;
+	background:#ECF0F1;
+	padding: 50px 50px;
+}
+.view-card{
+	margin-top:72px;
+}
+.table{
+	color: info;
+}
+.contact_profile{
+	width: 40px;
+	height: 40px;
+	object-fit:cover;
+	border-radius: 50%;
+}
+.my_paggination{
+	text-align: center;
+}
+.search-container{
+	width:auto;
+	position: relative;
+	padding-top: 50px;
+}
+.search-result{ 
+	width:auto;
+	position: relative;
+	background: black;
+	border: .5px solid blue;
+	display: none;
+}
+.content1{
+	padding: 80px 80px;
+}
+.post_image{
+	object-fit:cover;
+	width: 400px;
+}
+.footerSection{
+	background-color: #3B0A57 ;
+	width: 420px;
+}
+.headerSection{
+	background-color: #3B0A57 ;
+	padding: 5px;
+	width: 450px;
+}
+.right-sight{
+	position:fixed;
+	padding-top: 20px;
+}
+.logonav{
+	width: 60px;
+	height: 60px;
+	object-fit:cover;
+	border-radius: 50%;
+}
+.welcomename{
+	color: green;
+}
+.user_profile{
+	width: 120px;
+	height: 120px;
+	object-fit:cover;
+	border-radius: 10%;
+}
+.imagefull{
+	background-color: red;
+}
+.SearchLink{
+	text-align: center;
+}
+.search-user{
+	padding-top: 50px;
+	position: fixed;
+}
+
+/*search box------------  */
+/* The alert message box */
+.alert1 {
+  padding: 10px;
+  background-color: black;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
