@@ -13,7 +13,7 @@ import ch.qos.logback.classic.Logger;
 
 @Service
 public class PushNotificationService {
-	/*
+	
     @Value("#{${app.notifications.defaults}}")
     private Map<String, String> defaults;
 
@@ -73,6 +73,6 @@ public class PushNotificationService {
                 defaults.get("topic"));
         return request;
     }
-	*/
+	
 
 }
