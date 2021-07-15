@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PushNotificationController {
-	/*
+	
     private PushNotificationService pushNotificationService;
 
     public PushNotificationController(PushNotificationService pushNotificationService) {
@@ -28,5 +28,5 @@ public class PushNotificationController {
         pushNotificationService.sendSamplePushNotification();
         return new ResponseEntity<>(new PushNotificationResponse(HttpStatus.OK.value(), "Notification has been sent."), HttpStatus.OK);
     }
-    */
+    
 }
